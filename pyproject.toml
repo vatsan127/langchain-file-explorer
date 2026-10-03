@@ -1,0 +1,23 @@
+[project]
+name = "langchain-file-explorer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vatsan127", email = "vatsan127@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.3",
+    "langchain-community>=0.4.2",
+    "langchain-ollama>=1.1.0",
+    "langsmith>=0.14.4",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langchain-file-explorer = "langchain_file_explorer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
